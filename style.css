@@ -1,72 +1,107 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background: #f4f4f4;
+  }
+  
+  /* Header */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-}
+  }
+  
 
-header h1 {
+  .indented {
+    text-indent: 30px; /* Adjust the value to your preference */
+    }
+  header h1 {
     margin: 0;
-}
-
-nav ul {
+    font-size: 2rem;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+  }
+  
+  nav ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Center align the navigation links */
-    margin: 0; /* Remove default margin */
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-    text-align: left; /* Center align the main content */
-}
-
-main h2 {
-    color: #333;
-}
-
-main ul {
-    list-style: none; /* Remove default list style */
-    padding: 0;
     margin: 0;
-}
-
-main ul li {
-    margin: 10px 0; /* Space between list items */
-}
-
-main ul li a {
-    color: #007bff; /* Style links */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
     text-decoration: none;
-}
-
-main ul li a:hover {
-    text-decoration: underline; /* Underline links on hover */
-}
-
-footer {
-    background-color: #333;
-    color: white;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+  }
+  
+  nav ul li a:hover {
+    background: #555;
+  }
+  
+  /* Main Content */
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1rem 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 1rem;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  
+    nav ul li a {
+      display: block;
+      text-align: center;
+    }
+  }
